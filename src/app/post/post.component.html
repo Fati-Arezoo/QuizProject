@@ -7,10 +7,11 @@
           {{ post.title | uppercase }}
         </h1>
         <p>{{ post.content }}</p>
+        <p>{{ post.contentOne }}</p>
         <button mat-button class="btn" (click)="goBack()">Back</button>
       </div>
       <div class="picture">
-        <h3>{{ post.description }}</h3>
+        <h3 class="description">{{ post.description }}</h3>
         <p>{{ post.text }}</p>
         <img src="{{ post.img }}" alt="Angulr-install" />
       </div>

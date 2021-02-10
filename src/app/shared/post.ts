@@ -4,6 +4,7 @@ export class Post {
   image!: string;
   description!: string;
   content!: string;
+  contentOne!: string;
   img!: string;
   text!: string;
 }
