@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="top-container">
+    <div class="title-wrapper">
+      <h4 class="info-title">Learn Angular</h4>
+      <h1 class="title">Contact us.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore dicta laboriosam! Dolores, laborum. Similique ipsam reiciendis exercitationem quia tempora iste suscipit voluptates facilis. Cumque itaque deserunt dolorum rerum provident!</p>
+    </div>
+    <div class="icons">
+      <a href="#"><i class="fab fa-instagram-square"></i></a>
+    </div>
+  </div>
+
+
+  <mat-list class="card-hero">
+  <!-- Contact Form -->
+    <form class="form" (ngSubmit)="submitForm()">
+      <div class="form-inputs">
+        <!-- Name -->
+        <div class="top-inputs">
+          <mat-form-field class="form-full input">
+            <mat-label>Firstname</mat-label>
+            <input matInput placeholder="Firstname" name="Firstname"[(ngModel)]="firstname">
+          </mat-form-field>
+
+          <mat-form-field class="form-full input">
+            <mat-label>Lastname</mat-label>
+            <input matInput placeholder="Lastname" name="Lastname"[(ngModel)]="lastname">
+          </mat-form-field>
+
+          <!-- Email -->
+          <mat-form-field class="form-full input">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" name="Email"[(ngModel)]="email">
+          </mat-form-field>
+
+        </div>
+      <!-- Message -->
+      <mat-form-field class="form-full">
+        <mat-label>Message</mat-label>
+        <textarea class="txt" matInput placeholder="Message"></textarea>
+      </mat-form-field>
+      </div>
+      <!-- Submit button -->
+      <button class="btn" mat-raised-button>Submit</button>
+    </form>
+  </mat-list>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="top-container">
+    <div class="title-wrapper" fxFlex *ngIf="post">
+      <div class="text">
+        <h4 class="info-title">Learn Angular</h4>
+        <h1 class="title">
+          {{ post.title | uppercase }}
+        </h1>
+        <p>{{ post.content }}</p>
+        <button mat-button class="btn" (click)="goBack()">Back</button>
+      </div>
+      <div class="picture">
+        <h3>{{ post.description }}</h3>
+        <p>{{ post.text }}</p>
+        <img src="{{ post.img }}" alt="Angulr-install" />
+      </div>
+    </div>
+
+    <!-- <
+  </div>
+
+  <div
+    class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutGap="10px"
+    fxLayoutGap="10px"
+  >
+    <mat-card-header>
+      <mat-card-title> </mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      height="200px"
+      src="{{ post.image }}"
+      alt="{{ post.title }}"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-content>
+      <p>
+        {{ dish.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions> </mat-card-actions>
+  </div>
+</div> -->
+  </div>
+</div>

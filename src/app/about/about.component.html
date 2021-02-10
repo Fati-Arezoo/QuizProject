@@ -1,0 +1,36 @@
+<div class="about-container">
+
+  <div class="about-top-container">
+    <div class="about-wrapper">
+      <h4 class="top-info-title">The team</h4>
+      <h1 class="top-title">About us.</h1>
+      <p>__________________</p>
+      <p class="top-sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita fugiat praesentium, error deserunt vero possimus accusamus aliquam illo ipsa officiis, accusantium nihil hic ratione reiciendis asperiores sit in assumenda ad.Ex deserunt dolores facilis ab asperiores molestiae consectetur adipisci mollitia. Nesciunt non quas error quos, quibusdam qui quia, sed eius ab libero mollitia distinctio ea fuga ducimus numquam facilis exercitationem.</p>
+    </div>
+  </div>
+
+  <h4 class="bottom-title">Meet the creators.</h4>
+  <div class="bottom-content">
+
+    <div class="info-container" *ngFor="let creator of creators">
+      <div class="content">
+        <h4 class="info-title">{{creator.designation}}</h4>
+        <h1 class="name-title">{{creator.name}}</h1>
+        <p>__________________</p>
+        <p class="content-sub">{{creator.description}}</p>
+        <button mat-flat-button class="button">Contact</button>
+      </div>
+      <div class="image-container">
+        <img width="300rem" src="{{creator.image}}" alt="{{creator.name}}">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+

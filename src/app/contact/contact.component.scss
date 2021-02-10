@@ -1,0 +1,50 @@
+.container{
+  width: 83%;
+  margin: 0 auto;
+  padding: 4rem 0rem;
+}
+
+
+.title-wrapper{
+  margin-bottom: 3rem;
+  width: 40%;
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.info-title{
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  line-height: 0.5rem;
+  color:#929487;
+}
+
+.form-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.top-inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.input{
+  width: 30%;
+}
+
+.btn{
+  margin-top: 2rem;
+  font-size: .7rem;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}

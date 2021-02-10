@@ -1,0 +1,40 @@
+<h1>Quiz</h1>
+
+<section *ngIf="page == 1">
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium
+    consequuntur, blanditiis perspiciatis, doloremque culpa vero iste veniam
+    sunt a repellat alias. Alias reprehenderit vero, doloribus excepturi
+    exercitationem sequi cum officia!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae
+    voluptates ex quidem possimus repellendus recusandae ipsam? Ex earum cumque,
+    nulla laudantium tenetur quod omnis asperiores impedit soluta ab amet!
+  </p>
+  <button (click)="startQuiz()">Start Quiz</button>
+</section>
+
+<section *ngIf="page == 2 && question">
+  <div class="meta">
+    <span>Answers: {{ correctAnswers }}</span>
+    <span>Question {{ questionIndex + 1 }} of {{ questions.length }}</span>
+    <span>Timer: {{ countdown }}</span>
+  </div>
+  <hr />
+  <h2>Question: {{ question.question }}</h2>
+  <ul>
+    <li *ngFor="let option of question.options" (click)="selectOption($event)">
+      {{ option }}
+    </li>
+  </ul>
+  <div>
+    <span>{{ progress }} %</span>
+  </div>
+</section>
+
+<section *ngIf="page == 3">
+  <h2>Finished!</h2>
+  You answered {{ correctAnswers }} out of {{ questions.length }} questions
+  correctly.
+</section>

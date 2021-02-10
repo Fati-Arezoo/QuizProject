@@ -1,0 +1,22 @@
+.header{
+  padding: 0 8.5rem;
+  background-color: rgb(8, 8, 8);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  .logo{
+    color: #ACF7C1;
+    font-size: 2rem;
+  }
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.active{
+  color: #ACF7C1;
+}

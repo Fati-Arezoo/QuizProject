@@ -1,0 +1,143 @@
+.about-top-container{
+  position: relative;
+  width: 100%;
+  background-color: #beb8b2;
+  overflow: hidden;
+
+  &::before{
+    position: absolute;
+    content: '';
+    top: 3rem;
+    right: 0;
+    width: 20rem;
+    height: 20rem;
+    transform: rotate(45deg);
+    border: 1px solid #fff;
+    z-index: 0;
+  }
+  &::after{
+    position: absolute;
+    content: '';
+    top: 3rem;
+    right: 0;
+    width: 11rem;
+    height: 11rem;
+    transform: rotate(45deg);
+    border: 1px solid #fff;
+    z-index: 0;
+  }
+}
+
+.about-wrapper{
+  width: 40%;
+  margin: 0 4rem;
+  padding: 4rem 5rem;
+
+  .top-info-title{
+    font-size: .6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 0.5rem;
+    color:#929487;
+  }
+
+  .top-title{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+  }
+
+
+}
+
+.bottom-title{
+  margin: 3rem 9rem .5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+}
+
+.bottom-content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-container{
+  display: flex;
+  justify-content: space-between;
+  width: 39rem;
+  padding: 2rem;
+  margin: 2rem;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+  .content{
+    position: relative;
+    width: 45%;
+    padding: 1rem 1rem 1rem 2rem;
+
+    &:after{
+      position: absolute;
+      content: '';
+      top: 0px;
+      right: 1rem;
+      width: 15.5rem;
+      height: 6rem;
+      background-color: #A1B0AB/* rgb(208, 217, 219) */;
+      z-index: -1;
+    }
+
+    &::before{
+      position: absolute;
+      content: '';
+      top: -25px;
+      left: 0;
+      width: 30rem;
+      height: 27rem;
+      background-color: #fff;
+      box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 3px;
+      z-index: -1;
+    }
+
+    .info-title{
+      font-size: .6rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      line-height: 0.1rem;
+      color: #D5ECD4;
+    }
+
+    .name-title{
+      font-size: 3rem;
+      font-weight: bold;
+      line-height: 2.5rem;
+    }
+    .content-sub{
+      color: rgb(82, 82, 82);
+      font-size: 0.8rem;
+    }
+
+    .button{
+      margin-top: 2rem;
+      font-size: .7rem;
+      background-color: #000;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+    }
+  }
+
+
+
+}
+
+
+
+
